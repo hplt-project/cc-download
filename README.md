@@ -5,7 +5,9 @@ Install [aria2c](https://github.com/aria2/aria2) and make sure ```aria2c``` is i
 
 ## Usage
 Download files containing lists of URLs for all crawls from [cc_list.txt](cc_list.txt):
-```./get_url_lists.sh```
+```
+./get_url_lists.sh
+```
 
 Select file lists you want to download files from. For instance, we sampled 10 random CC crawls to download:
 ```

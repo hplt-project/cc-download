@@ -21,7 +21,7 @@ Generate download tasks for Aria2:
 
 Run Aria2:
 ```
-/run_aria.sh first10_warcs.lst ./
+/run_aria.sh first10_warcs.lst
 ```
 
 When finished or interrupted Aria2 will save unfinished downloads back to first10_warcs.lst. Rerun the last command to re-run downloading unfinished files.

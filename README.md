@@ -16,15 +16,12 @@ ls warcpaths/|shuf -n 10 >cc_paths_shuffled_first10.txt
 
 Generate download tasks for Aria2:
 ```
-./generate_aria_input_first10crawls.sh
+./generate_aria_input.sh cc_paths_shuffled_first10.txt >first10_warcs.lst
 ```
 
 Run Aria2:
 ```
-/run_aria.sh first10_warcs.lst ./
+./run_aria.sh first10_warcs.lst
 ```
 
 When finished or interrupted Aria2 will save unfinished downloads back to first10_warcs.lst. Rerun the last command to re-run downloading unfinished files.
-
-## TODO
-Update cc_list.txt: more crawls from 2023-2024 are now available!
